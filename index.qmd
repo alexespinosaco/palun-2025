@@ -1,0 +1,42 @@
+---
+title: "Calidad del aire en Medellín: una mirada desde la biología"
+author: "Álex Espinosa-Correa"
+institute: "Grupo de Estudios Botánicos GEOBOTA <br> Universidad de Antioquia UdeA"
+date: 2025-04-09
+date-format: iso
+
+# title-slide-attributes:
+#   data-background-image: images/pollen_grains.jpg
+#   data-background-opacity: "0.5"
+
+lang: es
+
+csl: apa.csl
+crossref: 
+  fig-title: Fig
+
+execute: 
+  echo: false
+  freeze: true
+
+format: 
+  revealjs:
+    theme: simple
+    width: 1920
+    height: 1080
+    # logo: images/logo_geobota.png
+    footer: "Calidad del aire: una mirada desde la biología"
+    slide-number: true
+    controls: true
+    touch: true
+    #chalkboard: true
+    embed-resources: true
+    # pointer:
+    #   color: green
+    #   pointerSize: 30
+revealjs-plugins:
+  - pointer
+bibliography: references.bib
+# nocite: |
+#   @villaveces-niño1947, @cuervo-trujillo1955, @naranjo1958, @vanderhammen1959, @sánchez-medina1961, @sánchez-medina1966, @schnetter1971, @hurtado1989, @leal-quevedo1993, @cabrales-uribe2003, @cepeda-sarabia2008, @alzate-guarin2015, @gutiérrez-torres2015, @díaz-camelo2017, @cortina-borrero2019, @jiménez-lópez2019, @mosquera-mosquera2019
+---
