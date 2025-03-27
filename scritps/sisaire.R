@@ -54,3 +54,19 @@ estaciones_amva_pm25 <-
 
 estaciones_pm25 |>
   dplyr::count(svca)
+
+raw_data_reporte <-
+  readxl::read_excel(
+    here::here(
+      "datos",
+      "sisaire_reporte.xls"
+    ),
+    skip = 9
+  )
+
+names(raw_data_reporte)
+
+estaciones <-
+  raw_data_reporte |>
+  dplyr::count(Estacion)
+
