@@ -25,3 +25,32 @@ estaciones_amva_pm10 <-
   dplyr::filter(
     svca == "SISAIRE - AMVA"
   )
+
+estaciones_pm10 |>
+  dplyr::count(svca)
+
+
+raw_data_estaciones_pm25 <-
+  readxl::read_excel(
+    here::here(
+      "datos",
+      "sisaire_estaciones_pm25.xls"
+    ),
+    skip = 9
+  )
+
+estaciones_pm25 <-
+  raw_data_estaciones_pm25 |>
+  janitor::clean_names() |>
+  dplyr::filter(
+    fecha_ultimo_registro >= "2025-01-01 00:00"
+  )
+
+estaciones_amva_pm25 <-
+  estaciones_pm25 |>
+  dplyr::filter(
+    svca == "SISAIRE - AMVA"
+  )
+
+estaciones_pm25 |>
+  dplyr::count(svca)
