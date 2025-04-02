@@ -1,8 +1,8 @@
 ---
-title: "Calidad del aire en Medellín: una mirada desde la biología"
+title: "Calidad del aire en Medellín:<br>una mirada desde la biología"
 author: "Álex Espinosa-Correa"
 institute: "Grupo de Estudios Botánicos GEOBOTA <br> Universidad de Antioquia UdeA"
-date: 2025-04-09
+# date: 2025-04-09
 date-format: iso
 
 # title-slide-attributes:
@@ -25,18 +25,224 @@ format:
     width: 1920
     height: 1080
     # logo: images/logo_geobota.png
-    footer: "Calidad del aire: una mirada desde la biología"
+    footer: "Calidad del aire en Medellín: una mirada desde la biología"
     slide-number: true
     controls: true
     touch: true
     #chalkboard: true
     embed-resources: true
-    # pointer:
-    #   color: green
-    #   pointerSize: 30
+    pointer:
+      color: green
+      pointerSize: 30
 revealjs-plugins:
   - pointer
 bibliography: references.bib
 # nocite: |
 #   @villaveces-niño1947, @cuervo-trujillo1955, @naranjo1958, @vanderhammen1959, @sánchez-medina1961, @sánchez-medina1966, @schnetter1971, @hurtado1989, @leal-quevedo1993, @cabrales-uribe2003, @cepeda-sarabia2008, @alzate-guarin2015, @gutiérrez-torres2015, @díaz-camelo2017, @cortina-borrero2019, @jiménez-lópez2019, @mosquera-mosquera2019
 ---
+
+## Aerobiología
+
+Ciencia interdisciplinaria en la que participan investigadores con diferentes experiencias en diversos temas relacionados con microorganismos, partículas biológicas aerotransportadas, p. ej. polen y esporas, y fenología. @galán2017.
+
+::: {.fragment .r-stretch}
+![Algunas disciplinas relacionadas a la Aerobiología. Modificado de @fernándezrodríguez2012.](images/esquema_aerobiologia_relaciones_02.svg){#fig-aerobioloogia-relaciones fig-align="center"}
+:::
+
+## Aerosoles Biológicos Primarios (PBA) o Bioaerosoles
+
+:::: {.columns}
+::: {.column .fragment width="50%"}
+Subconjunto de partículas atmosféricas que son liberadas directamente desde la biosfera hacia la atmósfera. Incluyen organismos vivos y muertos (como algas, arqueas y bacterias), unidades de dispersión (como esporas de hongos y polen de plantas) y varios fragmentos o excreciones (como restos vegetales y brocosomas). @fröhlich-nowoisky2016.
+:::
+
+::: {.column width="50%" .fragment .r-stretch}
+![Clasificación de las partículas aerovagantes según su tamaño y tipo. <a href="https://commons.wikimedia.org/wiki/File:Airborne-particulate-size-chart-es.svg">Jisaac9, Mieszko the first, Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons](images/Airborne-particulate-size-chart-es.svg){#fig-bioaerosoles fig-align="center" width="700"}
+:::
+::::
+
+## La ruta aerobiológica
+
+\
+
+\
+
+\
+
+::: {.fragment .r-stretch}
+![Ruta aerobiológica. Modificado de @edmonds1979 y @spieksma1992.](images/ruta_aerobiologica_v02.png){#fig-ruta-aerobiologica fig-align="center"}
+:::
+
+## Muestreador tipo Hirst
+
+:::: {.columns}
+::: {.column .fragment width="60%"}
+
+\
+
+![Muestreador tipo Hirst (VPPS 2000 de Lanzoni s.r.l.), partes y montaje.](images/plate_hirst.svg){#fig-plate-hirst .r-stretch fig-align="center"}
+:::
+
+::: {.column .fragment width="40%"}
+![Esquema del funcionamiento de muestreador tipo Hirst.](images/esquema_hirst.svg){#fig-hirst-esquema .r-stretch fig-align="center"}
+:::
+::::
+
+::: footer
+Para saber más: @galán2007 & @theair2006.
+:::
+
+## Preparación de la muestra
+
+\
+\
+
+::: {.fragment .r-stretch}
+![Esquema del montaje de las muestras obtenidas del muestreador tipo Hirst.](images/esquema_montaje_placas_00.svg){#fig-montaje-placas .r-stretch fig-align="center"}
+:::
+
+::: footer
+Para saber más: @galán2007 & @theair2006.
+:::
+
+## Obtención de datos
+
+::::: {.columns}
+:::: {.column .fragment fragment-index=1 width="50%"}
+![Campo visual observado durante la lectura de placas. Se observan algunos granos de polen y esporas de hongos.](images/hirst_muestra.jpg){#fig-hirst-muestra  fig-align="center"}
+
+::: {.fragment fragment-index=2}
+![Métodos de lectura.](images/esquema_metodo_lecturas.svg){#fig-lectura .r-stretch fig-align="center"}
+:::
+::::
+
+:::: {.column .fragment fragment-index=3 .r-stretch width="50%"}
+::: {#fig-esquema-lecturas layout-ncol="1"}
+
+![Plantilla para la toma de datos.](images/esquema_conteos.svg){#fig-conteo .fragment fragment-index=3 fig-align="center"} 
+
+![Plantilla de datos polínicos.](images/esquema_matriz.svg){#fig-matriz .fragment fragment-index=4 fig-align="center"}
+
+Esquema de la plantilla de toma de datos y matriz del conteo polínico.
+:::
+::::
+:::::
+
+::: footer
+Para saber más: @galán2007 & @theair2006.
+:::
+
+## Aerobiología en el mundo
+
+\
+
+\
+
+::: {.fragment .r-stretch}
+![Estaciones de muestreo aerobiológico en el mundo. Azul: tipo Hirst. Rojo: estación automática. Naranja: Otra manual. @buters2018.](images/aerobiologia_mapa.png){#fig-aerobiologia-mapa fig-align="center"}
+:::
+
+::: footer
+Para saber más: @davies2021; @lancia2021; @schramm2021.
+:::
+
+<!-- ## Aerobiología en Latinoamérica -->
+
+<!-- TODO: agregar información. -->
+
+## Aerobiología en Colombia
+
+::: {.fragment .r-stretch}
+![Ubicación geográfica de los estuios aeropalinológicos realizados en Colombia.](images/mapa_aerobiologia_colombia.svg){#fig-colombia-mapa fig-align="center"}
+:::
+
+## Muestreo aerobiológico en Medellín entre 2019-2022
+
+:::: {.columns}
+::: {.column .fragment width="60%"}
+![Ubicación del muestreador y de las estaciones meterológicas y de calidad de aire.](images/mapa_estaciones.png){#fig-ubicacion-estaciones fig-align="center" width="820"}
+:::
+
+::: {.column width="40%" .fragment .r-stretch}
+![Algunos de los recursos usados en el análisis de los datos.](images/hexsticker_metodos_02.png){#fig-metodos-objetivo-2 fig-align="center"}
+:::
+::::
+
+## Morfotipos más abundantes
+
+::: {.fragment .r-stretch}
+![Morfotipos más abundantes durante el muestreo aerobiológico.](images/plate_morfotipos.png){#fig-plate-morfotipos fig-align="center"}
+:::
+
+## Abundancia relativa
+
+![Abundancia relativa de todos los tipos polínicos durante todo el muestreo (2019-2022).](images/fig-relative-abundance-1.png)
+
+::: {.footer}
+<https://doi.org/pfsd>
+:::
+
+## Integral Anual de Polen (APIn)
+
+![Integral Anual de Polen (APIn) del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022).](images/fig-annual-pollen-integral-top-ten-1.png)
+
+::: {.footer}
+<https://doi.org/pfsd>
+:::
+
+## Comportamiento diario
+
+![Concentración media diaria del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022).](images/fig-daily-pollen-concentration-top-ten-1.png)
+
+::: {.footer}
+<https://doi.org/pfsd>
+:::
+
+## Comportamiento horario
+
+![](images/fig-hourly-pollen-concentration-top-ten-1.png)
+
+::: {.footer}
+<https://doi.org/pfsd>
+:::
+
+## Influencia de las variables meteorológicas {background-color="black" background-image="images/panoramica_medellin_clima.jpg" background-opacity="0.8"}
+
+:::: {.columns}
+::: {.column width="50%" .fragment .r-stretch}
+![Correlaciones negativas entre las concentraciones polínicas y los párametros meteorológicos.](images/hexsticker_correlaciones_negativa_meteorologia.png){#fig-correlacion-negativa-meteorologia fig-align="center"}
+:::
+
+::: {.column width="50%" .fragment .r-stretch}
+![Correlaciones positivas entre las concentraciones polínicas y los párametros meteorológicos.](images/hexsticker_correlaciones_positiva_meteorologia.png){#fig-correlacion-positiva-meteorologia fig-align="center"}
+:::
+::::
+
+::: {.footer}
+<https://doi.org/pfsd>
+:::
+
+## Influencia del viento
+
+![Influencia de la dirección del viento sobre los princiaples tipos polínicos.](images/pollution_plot.png)
+
+::: {.footer}
+<https://doi.org/pfsd>
+:::
+
+## Influencia de los contaminantes atmosféricos {background-color="white" background-image="images/panoramica_medellin_aire.jpg" background-opacity="0.8"}
+
+:::: {.columns}
+::: {.column width="50%" .fragment .r-stretch}
+![Correlaciones negativas entre las concentraciones polínicas y los contaminantes atmosféricos.](images/hexsticker_correlaciones_negativa_aire.png){#fig-correlacion-negativa-aire fig-align="center"}
+:::
+
+::: {.column width="50%" .fragment .r-stretch}
+![Correlaciones positivas entre las concentraciones polínicas y los contaminantes atmosféricos.](images/hexsticker_correlaciones_positiva_aire.png){#fig-correlacion-positiva-aire fig-align="center"}
+:::
+::::
+
+## Referencias {visibility="uncounted"}
+
+::: {#refs}
+:::
