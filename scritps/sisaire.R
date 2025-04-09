@@ -26,7 +26,8 @@ estaciones_amva_pm10 <-
     svca == "SISAIRE - AMVA"
   )
 
-estaciones_pm10 |>
+svca_estaciones_pm10 <-
+  estaciones_pm10 |>
   dplyr::count(svca)
 
 
@@ -52,7 +53,8 @@ estaciones_amva_pm25 <-
     svca == "SISAIRE - AMVA"
   )
 
-estaciones_pm25 |>
+svca_estaciones_pm25 <-
+  estaciones_pm25 |>
   dplyr::count(svca)
 
 raw_data_reporte <-

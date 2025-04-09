@@ -5,9 +5,9 @@ institute: "Grupo de Estudios Botánicos GEOBOTA <br> Universidad de Antioquia U
 # date: 2025-04-09
 date-format: iso
 
-# title-slide-attributes:
-#   data-background-image: images/pollen_grains.jpg
-#   data-background-opacity: "0.5"
+title-slide-attributes:
+  data-background-image: images/pollen_grains.jpg
+  data-background-opacity: "0.5"
 
 lang: es
 
@@ -21,11 +21,13 @@ execute:
 
 format: 
   revealjs:
-    theme: simple
+    theme:
+      - simple
+      - custom.scss
     width: 1920
     height: 1080
-    # logo: images/logo_geobota.png
-    footer: "Calidad del aire en Medellín: una mirada desde la biología"
+    logo: images/logo_geobota.png
+    footer: "[alexespinosaco.github.io/palun-2025](https://alexespinosaco.github.io/palun-2025/)"
     slide-number: true
     controls: true
     touch: true
@@ -37,16 +39,52 @@ format:
 revealjs-plugins:
   - pointer
 bibliography: references.bib
-# nocite: |
-#   @villaveces-niño1947, @cuervo-trujillo1955, @naranjo1958, @vanderhammen1959, @sánchez-medina1961, @sánchez-medina1966, @schnetter1971, @hurtado1989, @leal-quevedo1993, @cabrales-uribe2003, @cepeda-sarabia2008, @alzate-guarin2015, @gutiérrez-torres2015, @díaz-camelo2017, @cortina-borrero2019, @jiménez-lópez2019, @mosquera-mosquera2019
+nocite: |
+  @villaveces-niño1947, @cuervo-trujillo1955, @naranjo1958, @vanderhammen1959, @sánchez-medina1961, @sánchez-medina1966, @schnetter1971, @hurtado1989, @leal-quevedo1993, @cabrales-uribe2003, @cepeda-sarabia2008, @alzate-guarin2015, @gutiérrez-torres2015, @díaz-camelo2017, @cortina-borrero2019, @jiménez-lópez2019, @mosquera-mosquera2019
 ---
+
+## Calidad del aire
+
+::: columns
+::: {.column .incremental width="50%"}
+-   Presencia y concentración de contaminantes en la atmósfera, que pueden ser perjudiciales para la salud humana, el medio ambiente y otros bienes, y se evalúa a través del Índice de Calidad del Aire (ICA)
+
+-   En Colombia la normativa vigente es la **Resolución 2254 de 2017**
+
+-   Principales contaminantes: **PM~10~**, **PM~2.5~**, **SO~2~**, **NO~2~**, **O~3~**, **CO**
+
+-   Sistemas de Vigilancia de la Calidad del Aire (SVCA)
+
+-   Subsistema de Información Sobre Calidad del Aire (SISAIRE)
+
+-   Estaciones PM~10~: 190. **CAR**: 22, **SDA**: 19, **AMVA**: 18
+
+-   Estaciones PM~2.5~: 161. **AMVA**: 25, **CAR**: 23, **SDA**: 19
+
+-   [Informe del estado de la calidad del aire en Colombia 2023](https://storymaps.arcgis.com/stories/8d565731dfb1413eb679f9bd904de1c5)
+:::
+
+::: {.column .fragment width="50%"}
+![Estrategia nacional de calidad del aire - ENCA.](images/enca.jpg){#fig-enca fig-align="center" width="75%"}
+:::
+:::
+
+::: footer
+Área Metropolitana del Valle de Aburrá (**AMVA**), Corporación Autónoma Regional de Cundinamarca (**CAR**), Secretaría Distrital de Ambiente de Bogotá (**SDA**)
+:::
 
 ## Aerobiología
 
+::: fragment
 Ciencia interdisciplinaria en la que participan investigadores con diferentes experiencias en diversos temas relacionados con microorganismos, partículas biológicas aerotransportadas, p. ej. polen y esporas, y fenología. @galán2017.
+:::
 
 ::: {.fragment .r-stretch}
 ![Algunas disciplinas relacionadas a la Aerobiología. Modificado de @fernándezrodríguez2012.](images/esquema_aerobiologia_relaciones_02.svg){#fig-aerobioloogia-relaciones fig-align="center"}
+:::
+
+::: footer
+Créditos imagen portada: [Mervi Hjelmroos-Koski](https://cb-lectures-mervi.blogspot.com/2019/10/pollen-grains-world-travelers-without.html).
 :::
 
 ## Aerosoles Biológicos Primarios (PBA) o Bioaerosoles
@@ -57,7 +95,21 @@ Subconjunto de partículas atmosféricas que son liberadas directamente desde la
 :::
 
 ::: {.column width="50%" .fragment .r-stretch}
-![Clasificación de las partículas aerovagantes según su tamaño y tipo. <a href="https://commons.wikimedia.org/wiki/File:Airborne-particulate-size-chart-es.svg">Jisaac9, Mieszko the first, Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons](images/Airborne-particulate-size-chart-es.svg){#fig-bioaerosoles fig-align="center" width="700"}
+![Clasificación de las partículas aerovagantes según su tamaño y tipo. <a href="https://commons.wikimedia.org/wiki/File:Airborne-particulate-size-chart-es.svg">Jisaac9, Mieszko the first, Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.](images/Airborne-particulate-size-chart-es.svg){#fig-bioaerosoles fig-align="center" width="700"}
+:::
+::::
+
+## Polen
+
+:::: {.columns}
+::: {.column .fragment fragment-index=1 width="50%"}
+> Células de forma y dimensión variables, dotadas de una cubierta muy resistente o esporodermis, que se forman dentro de los sacos polínicos del estambre y tiene como misión, una vez formado el microgametófito pluricelular, fecundar el óvulo. @saenz-laín2004.
+
+![Flor de *Hemerocallis* .<a href="https://commons.wikimedia.org/wiki/File:Daglelie,_Hemerocallis._Locatie,_Tuinen_Mien_Ruys.jpg">Dominicus Johannes Bergsma</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.](images/flor_hemerocallis.jpg){#fig-polen-formacion .fragment fragment-index=3 .r-stretch fig-align="center" width="50%"}
+:::
+
+::: {.column width="50%" .fragment fragment-index=2}
+![Ciclo de vida de las plantas con flor (Angiospermae). <a href="https://commons.wikimedia.org/wiki/File:Angiosperm_life_cycle_diagram-es.svg">LadyofHats</a>, Public domain, via Wikimedia Commons.](images/Angiosperm_life_cycle_diagram-es.svg){#fig-ciclo-vida fig-align="center" width="684"}
 :::
 ::::
 
@@ -71,6 +123,74 @@ Subconjunto de partículas atmosféricas que son liberadas directamente desde la
 
 ::: {.fragment .r-stretch}
 ![Ruta aerobiológica. Modificado de @edmonds1979 y @spieksma1992.](images/ruta_aerobiologica_v02.png){#fig-ruta-aerobiologica fig-align="center"}
+:::
+
+## Principios de muestreo
+
+::: {.fragment .r-stretch}
+![Principios de muestreo de la Aerobiología.](images/hexsticker_principios.svg){#fig-muestreo-principios fig-align="center"}
+:::
+
+::: footer
+Para saber más: @theair2006 y @mandrioli1998.
+:::
+
+## Técnicas de muestreo
+
+::: {.fragment .r-stretch}
+![Tecnicas de muestreo utilizados en la Aerobiología.](images/hexsticker_tecnicas.svg){#fig-muestreo-tecnicas fig-align="center"}
+:::
+
+::: footer
+Para saber más: @theair2006 y @mandrioli1998.
+:::
+
+## Instrumentos de muestreo {.smaller}
+
+:::: {.columns}
+::: {.column width="50%" .fragment .r-stretch}
+### No Volumétricos
+
+![Silueta de muestreador tipo Durham.](images/silhouette_durham_sampler.svg){#fig-muestreador-durham fig-align="center" width="300"}
+
+-   Deposición gravitacional
+
+    -   Caja de Petri
+
+    -   Portaobjetos
+
+    -   Muestreador Durham
+
+    -   Tauber
+:::
+
+::: {.column width="50%" .fragment .r-stretch}
+### Volumétricos 
+
+![Silueta de muestreador tipo Hirst.](images/silhouette_hirst_sampler.svg){#fig-muestreador-hirst fig-align="center" width="300"}
+
+-   Impacto por succión
+
+    -   Muestreador Hirst
+
+    -   Muestreador Andersen
+
+-   Impacto por filtración
+
+    -   Muestreador Cour
+
+-   Impacto por rotación
+
+    -   Muestreador Rotorod
+
+-   Liquid impingers
+
+    -   All-glass impinger (AGI)
+:::
+::::
+
+::: footer
+Para saber más: @belmonte.
 :::
 
 ## Muestreador tipo Hirst
@@ -103,6 +223,52 @@ Para saber más: @galán2007 & @theair2006.
 
 ::: footer
 Para saber más: @galán2007 & @theair2006.
+:::
+
+## Algunos conceptos
+
+::::: columns
+:::: {.column width="50%"}
+::: {.fragment fragment-index=1}
+### Conteo polínico
+
+El resultado del análisis de la muestra o los datos en bruto. Es una cantidad entera obtenida del análisis microscópico que no se puede comparar, y necesita ser convertida a concentraciones polínicas.
+:::
+
+\
+
+\
+
+::: {.fragment fragment-index=3}
+### Integral Anual de Polen (APIn)[^2]:
+Expresado como (Pollen \* day/m^3^). Integral en el tiempo de la concentración de polen. Puede obtenerse sumando la concentración diaria promedio durante el período de tiempo especificado, o multiplicando la concentración promedio de toda la temporada por la duración de la misma.
+:::
+::::
+
+:::: {.column width="50%"}
+::: {.fragment fragment-index=2}
+### Concentración polínica
+
+Expresado como (Pollen grains/m^3^) o (Pollen/m^3^). El número de granos de polen o esporas en el aire por unidad de volumen de aire. Se expresa como una media diaria u horaria, obtenida de multiplicar el conteo polínico por una factor de corrección[^1].
+:::
+
+\
+
+::: {.fragment fragment-index=4}
+### Periodo de Polinización Principal (MPS)[^3]:
+Duración del tiempo durante el cual el polen está presente en la atmósfera en concentraciones significativas en una ubicación. Existen diferentes métodos para definir el inicio y el final de la temporada principal.
+:::
+::::
+:::::
+
+[^1]: El factor de corrección depende del volumen de succión del equipo y la superficie del campo del microscopio utilizados.
+
+[^2]: APIn: Annual Pollen Integral. SPIn: Seasonal Pollen Integral.
+
+[^3]: MPS: Main Pollen Season
+
+::: footer
+Para saber más: @galán2007 & @galán2017.
 :::
 
 ## Obtención de datos
@@ -146,14 +312,50 @@ Para saber más: @galán2007 & @theair2006.
 Para saber más: @davies2021; @lancia2021; @schramm2021.
 :::
 
-<!-- ## Aerobiología en Latinoamérica -->
+## Aerobiología en Colombia
 
-<!-- TODO: agregar información. -->
+::: {.fragment .r-stretch}
+![Linea de tiempo de los estudios aeropalinológicos realizados en Colombia. Los espacios en blanco es información que no se pudo obtener. Tipos polinicos identificados/total; **\***. No se tuvo acceso directo al material.](images/esquema_aerobiologia_colombia.svg){#fig-colombia-historia fig-align="center"}
+:::
+
+::: footer
+Espinosa-Correa & Alzate-Guarín (in review). Aeropalinological atlas and the development of aerobiological studies in Colombia. 
+:::
 
 ## Aerobiología en Colombia
 
 ::: {.fragment .r-stretch}
 ![Ubicación geográfica de los estuios aeropalinológicos realizados en Colombia.](images/mapa_aerobiologia_colombia.svg){#fig-colombia-mapa fig-align="center"}
+:::
+
+::: footer
+Espinosa-Correa & Alzate-Guarín (in review). Aeropalinological atlas and the development of aerobiological studies in Colombia. 
+:::
+
+## Problemática
+
+\
+
+\
+
+\
+
+::: {.fragment .r-stretch}
+![Problemas y oportunidades identificadas para realizar un estudio aeriobiológico en la ciudad de Medellín.](images/hexsticker_problematica.svg){#fig-problematica fig-align="center"}
+:::
+
+## Objetivo
+
+\
+
+::: {.fragment}
+Realizar el estudio aerobiológico del polen aerovagante presente en la atmósfera de la ciudad de Medellín (Colombia), su relación con las variables meteorológicas y los principales contaminantes del aire.
+:::
+
+\
+
+::: {.fragment}
+![Resumen gráfico.](images/esquema_resumen_grafico.svg){#fig-resumen .r-stretch fig-align="center"}
 :::
 
 ## Muestreo aerobiológico en Medellín entre 2019-2022
@@ -168,6 +370,36 @@ Para saber más: @davies2021; @lancia2021; @schramm2021.
 :::
 ::::
 
+## Duración del muestreo
+
+\
+
+\
+
+\
+
+\
+
+::: {.fragment .r-stretch}
+![Duración del muestreo aerobiológico en la ciudad de Medellín. Semana \### representa semana de muestreo, no semanas calendario.](images/esquema_duracion_muestreo.svg){#fig-muestreo-duracion .r-stretch fig-align="center"}
+:::
+
+## Atlas aeropalinológico de Colombia {.smaller}
+
+:::: {.columns}
+::: {.column .fragment fragment-index=1 width="50%"}
+![**A**. *Acacia*; **B.** *Alnus*; **C.** *Alternanthera*; **D.** Amaranthaceae; **E.** *Ambrosia*; **F.** Apiaceae en vista ecuatorial; **G.** Arecaceae; **H.** *Artemisia*; **I.** Asteraceae: Helianthus; **J.** Asteraceae: Lactuceae; **K.** Asteraceae: Senecio; **L.** Brassicaceae; **M.** *Cannabis*; **N.** *Casuarina*; **O.** *Cecropia* en vista ecuatorial; **P.** *Citrus*; Fotografías tomadas en microscopía óptica a 1000x. Escala = 10 µm.](images/aerobiologia_colombia_1_300dpi.png){#fig-atlas-1 fig-align="center"}
+:::
+
+::: {.column .fragment fragment-index=1 width="50%"}
+![**A**. Cupressaceae; **B.** Cyperaceae; **C.** *Fraxinus*; **D.** *Juglans*; **E.** *Mangifera indica*; **F.** Moraceae; **G.** Myrtaceae **H.** *Pinus*; **I.** *Plantago*; **J.** Poaceae; **K.** *Quercus*; **L.** *Ricinus*; **M.** *Rumex*; **N.** *Sambucus*; **O.** Typhaceae; **P.** Urticaceae; Fotografías tomadas en microscopía óptica a 1000x. Escala = 10 µm.](images/aerobiologia_colombia_2_300dpi.png){#fig-atlas-2 fig-align="center"}
+:::
+::::
+
+::: footer
+Espinosa-Correa & Alzate-Guarín (in review). Aeropalinological atlas and the development of aerobiological studies in Colombia. 
+:::
+
 ## Morfotipos más abundantes
 
 ::: {.fragment .r-stretch}
@@ -176,34 +408,71 @@ Para saber más: @davies2021; @lancia2021; @schramm2021.
 
 ## Abundancia relativa
 
-![Abundancia relativa de todos los tipos polínicos durante todo el muestreo (2019-2022).](images/fig-relative-abundance-1.png)
+::: {.fragment}
+![Abundancia relativa de todos los tipos polínicos durante todo el muestreo (2019-2022).](images/fig-relative-abundance-1.png){#fig-abundancia}
+:::
 
 ::: {.footer}
-<https://doi.org/pfsd>
+Artículo: @espinosa-correa2025. <https://doi.org/pfsd>
 :::
 
 ## Integral Anual de Polen (APIn)
 
-![Integral Anual de Polen (APIn) del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022).](images/fig-annual-pollen-integral-top-ten-1.png)
+::: {.fragment}
+![Integral Anual de Polen (APIn) del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022).](images/fig-annual-pollen-integral-top-ten-1.png){#fig-apin}
+:::
 
 ::: {.footer}
-<https://doi.org/pfsd>
+Artículo: @espinosa-correa2025. <https://doi.org/pfsd>
 :::
 
 ## Comportamiento diario
 
-![Concentración media diaria del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022).](images/fig-daily-pollen-concentration-top-ten-1.png)
+::: {.fragment}
+![Concentración media diaria del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022).](images/fig-daily-pollen-concentration-top-ten-1.png){#fig-comportamiento-diario}
+:::
 
 ::: {.footer}
-<https://doi.org/pfsd>
+Artículo: @espinosa-correa2025. <https://doi.org/pfsd>
+:::
+
+## Periodo de Polinización Principal (MPS)
+
+::: columns
+::: {.column .fragment width="50%"}
+|              | Periodo 2019-2020 | Periodo 2020-2021 | Periodo 2021-2022 |
+|--------------|-------------------|-------------------|-------------------|
+| *Cecropia*   | 242               | 316               | 335               |
+| Cupressaceae | 200               | 310               | 277               |
+| *Fraxinus*   | 239               | 307               | 283               |
+| Moraceae     | 239               | 329               | 342               |
+| Myrtaceae    | 222               | 323               | 339               |
+| *Pinus*      | 245               | 299               | 326               |
+| Poaceae      | 234               | 324               | 334               |
+| Urticaceae   | 253               | 289               | 310               |
+| Total Pollen | 244               | 309               | 332               |
+
+: Periodo de Polinización Principal (MPS) del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022). {#tbl-mps}
+
+:::
+
+::: {.column .fragment width="50%"}
+![En Medellín el MPS no es muy informativo.](images/hexsticker_pollen_everywhere.svg){#fig-meme width="75%"}
+:::
+:::
+
+::: {.footer}
+Artículo: @espinosa-correa2025. <https://doi.org/pfsd>
 :::
 
 ## Comportamiento horario
 
-![](images/fig-hourly-pollen-concentration-top-ten-1.png)
+::: {.fragment}
+![Concentración horaria del polen total y de los tipos polínicos más abundantes durante todo el periodo de muestreo (2019-2022).](images/fig-hourly-pollen-concentration-top-ten-1.png){#fig-comportamiento-horario}
+:::
 
 ::: {.footer}
-<https://doi.org/pfsd>
+Artículo: @espinosa-correa2025. <https://doi.org/pfsd>
 :::
 
 ## Influencia de las variables meteorológicas {background-color="black" background-image="images/panoramica_medellin_clima.jpg" background-opacity="0.8"}
@@ -219,18 +488,26 @@ Para saber más: @davies2021; @lancia2021; @schramm2021.
 ::::
 
 ::: {.footer}
-<https://doi.org/pfsd>
+Artículo: @espinosa-correa2025. <https://doi.org/pfsd>
 :::
 
-## Influencia del viento
+## Influencia de la dirección del viento
 
-![Influencia de la dirección del viento sobre los princiaples tipos polínicos.](images/pollution_plot.png)
+::: columns
+::: {.column .fragment width="50%"}
+![Distribución de los árboles de interes aerobiológico.](images/arbolado-medellin.jpg){#fig-arbolado width="65%"}
+:::
+
+::: {.column .fragment width="50%"}
+![Influencia de la dirección del viento sobre los princiaples tipos polínicos.](images/pollution_plot.png){#fig-direccion}
+:::
+:::
 
 ::: {.footer}
-<https://doi.org/pfsd>
+Artículo: @espinosa-correa2025. <https://doi.org/pfsd> Mapeando los yarumos de Medellín [alexespinosaco.github.io/cecropia-medellin/](https://alexespinosaco.github.io/cecropia-medellin/)
 :::
 
-## Influencia de los contaminantes atmosféricos {background-color="white" background-image="images/panoramica_medellin_aire.jpg" background-opacity="0.8"}
+## Influencia de los contaminantes atmosféricos {background-color="black" background-image="images/panoramica_medellin_aire.jpg" background-opacity="0.8"}
 
 :::: {.columns}
 ::: {.column width="50%" .fragment .r-stretch}
@@ -241,6 +518,45 @@ Para saber más: @davies2021; @lancia2021; @schramm2021.
 ![Correlaciones positivas entre las concentraciones polínicas y los contaminantes atmosféricos.](images/hexsticker_correlaciones_positiva_aire.png){#fig-correlacion-positiva-aire fig-align="center"}
 :::
 ::::
+
+## Finaciación {visibility="uncounted"}
+
+::: {.r-stretch layout-ncol="1"}
+![](images/logo_udea.png){.fragment fig-align="center" width="1590"}
+
+![](images/hexsticker_financiacion.svg){.fragment fig-align="center" width="692"}
+:::
+
+## {visibility="uncounted"}
+
+::::: columns
+:::: {.column width="50%"}
+![](images/geobota_qr_social.png)
+::::
+
+:::: {.column width="50%"}
+
+\
+
+\
+
+\
+
+*Los granos de polen individuales pueden ser transportados por el viento […]*\
+*Ellos pueden viajar lejos sobre los océanos.*\
+@erdtman1969
+
+\
+
+\
+
+\
+
+::: {.r-fit-text}
+¡Muchas Gracias!
+:::
+::::
+:::::
 
 ## Referencias {visibility="uncounted"}
 
